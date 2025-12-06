@@ -1,0 +1,105 @@
+.modal-content {
+    font-weight: 600; /* slightly bolder than normal (400) */
+    color: #030202;      
+    line-height: 2;
+    background: #efa7a7;
+    width: 100%;        /* full width minus padding */
+    max-width: 750px;   /* max width for large screens */
+    padding: 25px;
+    border-radius: 12px;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    max-height: 90vh;   /* never exceed viewport height */
+    overflow-y: auto;   /* scroll if content is tall */
+}
+
+/* Slightly bolder for list items */
+.modal-content ul li {
+    font-weight: 500;
+}
+
+/* POPUP BACKGROUND */
+.modal {
+    display: none;  
+    position: fixed;
+    inset: 0; /* top:0; right:0; bottom:0; left:0; */
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    z-index: 1000;
+}
+
+/* Show overlay */
+.modal.show {
+    display: flex;
+}
+
+/* Show popup content */
+.modal-content.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Close Button */
+.close-btn {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ===========================
+   RESPONSIVE ADJUSTMENTS
+=========================== */
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        max-height: 85vh;
+    }
+    .close-btn {
+        font-size: 24px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+    .modal-content {
+        padding: 20px;
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}
+
+/* Small Laptops */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .modal-content {
+        padding: 25px;
+        font-size: 1.05rem;
+        max-width: 650px;
+    }
+}
+
+/* Medium Desktops */
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .modal-content {
+        padding: 28px;
+        font-size: 1.1rem;
+        max-width: 700px;
+    }
+}
+
+/* Large Desktops */
+@media (min-width: 1201px) {
+    .modal-content {
+        padding: 30px;
+        font-size: 1.15rem;
+        max-width: 750px;
+    }
+}
