@@ -8,6 +8,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background: #fdfcfb;
+  background: red;
   color: #333;
   line-height: 1.6;
   text-align: center;
@@ -29,8 +30,8 @@ body {
     width: 100%;              
     height: 66vh;  
     padding: 45px 10px;
-    
-    background-image: url("homeimages/home.jpg");
+    /* 
+    background-image: url("homeimages/home.jpg"); */
     background-size: cover;     
     background-position: center; 
     background-repeat: no-repeat;
@@ -339,6 +340,7 @@ h1.animated-text {
   }
 
 }
+
 
 
 
