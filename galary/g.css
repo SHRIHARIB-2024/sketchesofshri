@@ -1,0 +1,156 @@
+/* Root variables */
+:root {
+    --primary: #2e2e2e;
+    --accent: #ffb400;
+    --light-bg: #fdfcfb;
+    --text: #333;
+}
+
+/* Body reset */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: var(--light-bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ffb400;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    /* maximum width for large screens */
+    margin: 0 auto;
+    /* center horizontally */
+    padding: 0 20px;
+}
+
+/* Header, Section, Footer */
+header,
+section,
+footer {
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: var(--primary);
+    color: white;
+    padding: 2rem 1rem;
+}
+
+/* Footer */
+footer {
+    background: var(--primary);
+    color: #ccc;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Section */
+section {
+    padding: 0rem 2rem;
+     animation: myanimation 15s infinite;
+}
+
+@keyframes myanimation {
+  0%   { background-color: rgb(139, 226, 222); }       
+  25%  { background-color: rgb(240, 240, 183); }      
+  50%  { background-color: rgb(43, 221, 224); }       
+  75%  { background-color: rgb(228, 174, 230); }     
+  100% { background-color: rgba(246, 197, 35, 0.575); }       /* red */
+}
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* default desktop/laptop */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* LIGHTBOX */
+.lightbox {
+    display: none;
+    /* hidden by default */
+    position: fixed;
+    /* fixed to viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    /* dark overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* on top of everything */
+    cursor: pointer;
+    padding: 20px;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Mobile: 2 images per row */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 10px;
+    }
+}
+
+/* Tablet: 3 images per row */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Laptop/Desktop: 5 images per row (full width) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+        /* reduce side padding */
+    }
+
+    .gallery {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        padding: 50px 0;
+    }
+}
