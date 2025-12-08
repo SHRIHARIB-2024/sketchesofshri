@@ -30,7 +30,7 @@ body {
     height: 66vh;  
     padding: 45px 10px;
     
-    background-image: url("/homeimages/home.jpg");
+    background-image: url("homeimages/home.jpg");
     background-size: cover;     
     background-position: center; 
     background-repeat: no-repeat;
@@ -339,6 +339,7 @@ h1.animated-text {
   }
 
 }
+
 
 
 
