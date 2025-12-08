@@ -27,7 +27,7 @@ body {
 /* MAIN CONTENT — FULL SCREEN BACKGROUND */
 .container {
     width: 100%;              
-    height: 66vh;  
+    height: 76vh;  
     padding: 45px 10px;
     background-image: url("homeimages/home.jpg");
     background-size: cover;     
@@ -338,6 +338,7 @@ h1.animated-text {
   }
 
 }
+
 
 
 
