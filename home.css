@@ -286,8 +286,8 @@ h1.animated-text {
 
 @media (max-width: 480px) {
   .carousel-wrapper {
-    max-width: 260px;
-    height: 160px;
+    max-width: 160px;
+    height: 260px;
   }
 
   header img {
@@ -339,6 +339,7 @@ h1.animated-text {
   }
 
 }
+
 
 
 
