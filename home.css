@@ -151,7 +151,7 @@ footer {
 .carousel-wrapper {
   width: 100%;
   max-width: 200px;
-  height: 250px;
+  height: 300px;
 
   margin: 50px auto;
   perspective: 1200px;
@@ -338,6 +338,7 @@ h1.animated-text {
   }
 
 }
+
 
 
 
