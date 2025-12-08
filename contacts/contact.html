@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Sketches of Shri</title>
 
+    <!-- contact.css is in the same folder as this file (contacts/) -->
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Achievements CSS & JS (one level up, then achivements/) -->
     <link rel="stylesheet" href="../achivements/achivement.css">
     <script src="../achivements/achivement.js" defer></script>
-
 </head>
 
 <body>
@@ -18,7 +20,8 @@
     <header>
         <h1>Contact Me</h1>
         <nav>
-            <a href="/index.html">Home</a>
+            <!-- FIXED: Use relative path instead of /index.html -->
+            <a href="../index.html">Home</a>
             <a href="#" id="openAchievements">Achievements</a>
         </nav>
     </header>
@@ -36,7 +39,9 @@
             </div>
         </section>
     </main>
+
     <div id="popupContainer"></div>
+
     <script>
         fetch('../achivements/achivement.html')
             .then(response => response.text())
