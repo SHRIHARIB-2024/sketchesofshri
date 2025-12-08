@@ -152,7 +152,7 @@ footer {
   width: 100%;
   max-width: 200px;     /* a bit wider */
   height: 280px;        /* more height for full body */
-  margin: 50px auto;
+  margin: 30px auto;
   perspective: 1200px;
   position: relative;
 }
@@ -339,6 +339,7 @@ h1.animated-text {
   }
 
 }
+
 
 
 
