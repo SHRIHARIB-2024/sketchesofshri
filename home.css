@@ -31,7 +31,7 @@ body {
   /* Full height */
   padding: 0px 10px;
 
-  background-image: url("./homeimages/home.jpg");
+  background-image: url("/homeimages/home.jpg");
   background-size: cover;
   /* Auto responsive */
   background-position: center;
@@ -342,3 +342,4 @@ h1.animated-text {
   }
 
 }
+
