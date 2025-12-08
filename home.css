@@ -28,23 +28,21 @@ body {
 .container {
   width: 100%;
   min-height: 61vh;
-  /* Full height */
   padding: 0px 10px;
 
-  background-image: url("/homeimages/home.jpg");
+  background-image: url("homeimages/home.jpg");
+
   background-size: cover;
-  /* Auto responsive */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* Parallax on desktop/laptop */
 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
   border-radius: 10px;
 }
+
 
 
 
@@ -342,4 +340,5 @@ h1.animated-text {
   }
 
 }
+
 
